@@ -4,10 +4,61 @@
 }
 
 .header-container {
+  position: relative;
   max-width: var(--fullWidth);
   margin: 0 auto;
 }
 
+/* Label with yellowish background */
+.header-applicantStudent {
+  position: absolute;
+  right: 27%;
+  width: 60px;
+  height: 95px;
+  background: linear-gradient(
+    0deg,
+    rgba(203, 137, 0, 1) 10%,
+    rgba(232, 182, 18, 1) 36%,
+    rgba(249, 209, 29, 1) 80%,
+    rgba(235, 158, 0, 1) 100%
+  );
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-applicantStudent span {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header-applicantStudent span:nth-child(1) {
+  margin-top: 1.2rem;
+  margin-bottom: -0.3rem;
+  letter-spacing: 0.1rem;
+}
+.header-applicantStudent span:nth-child(2) {
+  font-size: 0.75rem;
+}
+
+.header-applicantStudent::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  bottom: -23px;
+  border-width: 60px 60px 40px 60px;
+  border-style: solid;
+  border-color: transparent transparent var(--clr-bg-darkGreen) transparent;
+}
+/* End - Label with yellowish background */
+
+/* ========== */
+/* HEADER TOP */
+/* ========== */
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -43,7 +94,81 @@
 .btn-primary:active:focus {
   box-shadow: none;
 }
+/* End - Dropdown reset */
 
 .languageSelector-flag {
   margin-right: 4px;
+}
+
+/* ========== */
+/* HEADER MAIN */
+/* ========== */
+.header-main {
+  margin-top: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logoName {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  height: 7.81rem;
+}
+
+.header-headline {
+  color: #fff;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.header-headline h1 {
+  font-family: "Trajan Pro";
+  font-size: 1.875rem;
+}
+.header-headline p {
+  font-family: "Roboto";
+  font-style: italic;
+  color: var(--clr-text-lightMustard);
+}
+
+.header-searchForm {
+  position: relative;
+  width: 25%;
+  align-self: flex-start;
+  background: var(--clr-bg-midDarkGreen);
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-searchBox {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: var(--clr-bg-midDarkGreen);
+  color: var(--clr-text-lightGray);
+  padding: 0.625rem;
+  font-size: 0.875rem;
+  font-family: Helvetica, Arial, sans-serif;
+  transition: box-shadow 0.3s;
+}
+
+.header-searchBox:focus {
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+}
+
+.header-searchBox::placeholder {
+  color: var(--clr-text-lightGray);
+  font-family: inherit;
+}
+
+.header-searchIcon {
+  position: absolute;
+  right: 1rem;
+  color: var(--clr-text-lightGray);
 }

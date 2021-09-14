@@ -1,23 +1,24 @@
 import React from "react";
+
 import { useTranslation } from "react-i18next";
 import { useGlobalContext } from "../../context";
-import { ExternalLink } from "react-external-link";
-import i18n from "i18next";
+import "bootstrap/dist/css/bootstrap.min.css";
 
+import { ExternalLink } from "react-external-link";
 import {
   FaFacebookSquare,
   FaTwitterSquare,
   FaYoutubeSquare,
   FaInstagram,
   FaGlobe,
+  FaSearch,
 } from "react-icons/fa";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
-import "bootstrap/dist/css/bootstrap.min.css";
 import ReactCountryFlag from "react-country-flag";
-import Select from "react-select";
-import "./Home.css";
 import i18next from "i18next";
+import Logo from "../../assets/images/artvin.png";
+import "./Home.css";
 
 const languages = [
   {
@@ -42,6 +43,10 @@ const Home = () => {
       <header className="header">
         {/* <p>{t("ArtvinUniName")}</p> */}
         <div className="header-container">
+          <div className="header-applicantStudent">
+            <span>{t("header_applicantStudentTop")}</span>
+            <span>{t("header_applicantStudentBottom")}</span>
+          </div>
           <div className="header-top">
             <div className="header-socialMediaButtons">
               <ExternalLink
@@ -101,7 +106,30 @@ const Home = () => {
               </DropdownButton>
             </div>
           </div>
-          <div className="header-main"></div>
+          <div className="header-main">
+            <div className="header-logoName">
+              <figure>
+                <img src={Logo} alt="logo" className="header-logo" />
+              </figure>
+              <div className="header-headline">
+                <h1>{t("header_head")}</h1>
+                <p>{t("header_subHead")}</p>
+              </div>
+            </div>
+
+            <form
+              action="https://www.artvin.edu.tr/arama"
+              method="GET"
+              className="header-searchForm"
+            >
+              <input
+                className="header-searchBox"
+                type="text"
+                placeholder={t("header_searchPlaceHolder")}
+              />
+              <FaSearch className="header-searchIcon" />
+            </form>
+          </div>
           <nav className="header-nav"></nav>
         </div>
       </header>
