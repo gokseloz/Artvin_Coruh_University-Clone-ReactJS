@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+html,
+body {
+  font-family: "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Trajan Pro"), url("/src/fonts/Trajan\ Pro.ttf") format("ttf");
+}
+
+:root {
+  --clr-bg-veryDarkGreen: #015f55;
+  --clr-bg-darkGreen: #007468;
+  --clr-bg-veryDarkGray: #606e6c;
+
+  --clr-text-lightMustard: #fdba04;
+  --clr-text-darkMustard: #ff9806;
+
+  --clr-text-veryDarkGreen: #02322d;
+  --clr-text-DarkGreen: #4b625e;
+  --clr-text-LightGreen: #95c7bf;
+  --clr-text-verylightGreen: #badad7;
+
+  --clr-text-veryLightGray: #ecfcfa;
+
+  --fullWidth: 1270px;
+}

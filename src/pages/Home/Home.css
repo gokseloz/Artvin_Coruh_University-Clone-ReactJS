@@ -1,0 +1,49 @@
+.header {
+  width: 100vw;
+  background-color: var(--clr-bg-darkGreen);
+}
+
+.header-container {
+  max-width: var(--fullWidth);
+  margin: 0 auto;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-socialMediaLink {
+  font-size: 1.375rem;
+  padding: 0 4px;
+}
+
+.header-socialMediaIcon {
+  color: #fdba04;
+}
+
+/* Dropdown reset */
+.header-languageSelector button,
+.header-languageSelector button:focus,
+.header-languageSelector button:hover {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.show > .btn-primary.dropdown-toggle,
+.show > .btn-primary.dropdown-toggle:focus,
+.show > .btn-primary.dropdown-toggle:hover {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.btn-primary:active:focus {
+  box-shadow: none;
+}
+
+.languageSelector-flag {
+  margin-right: 4px;
+}
