@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 a,
 a:active,
 a:hover {
@@ -18,7 +22,7 @@ a:hover {
 
 html,
 body {
-  font-family: "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 :root {
@@ -32,12 +36,21 @@ body {
 
   --clr-text-veryDarkGreen: #02322d;
 
+  --clr-text-midDarkBlack: #333333;
+
   --clr-text-DarkGreen: #4b625e;
   --clr-text-LightGreen: #95c7bf;
   --clr-text-verylightGreen: #badad7;
 
   --clr-text-lightGray: #78a29c;
+  --clr-text-midLightGray: #e4f4f2;
   --clr-text-veryLightGray: #ecfcfa;
 
+  --clr-bg-hover-LightGray: #e5e8eb;
+  --clr-text-hover-Black: #242526;
+  --clr-text-hover-veryLightGray: #f8fefd;
+
   --fullWidth: 1300px;
+
+  --speed: 500ms;
 }
