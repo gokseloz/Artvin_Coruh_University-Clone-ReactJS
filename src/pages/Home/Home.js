@@ -384,197 +384,199 @@ const NavItem = () => {
       subMenu: [
         {
           id: 1,
-          title: "Fakülteler",
+          title: t("header_nav_academics_faculties"),
           subMenu: [
             {
               id: 1,
-              title: "Egitim Fakultesi",
+              title: t("header_nav_academics_faculties_education"),
               link: "/egitim-fakultesi",
             },
             {
               id: 2,
-              title: "Fen Edebiyat Fakultesi",
+              title: t("header_nav_academics_faculties_science"),
               link: "/fen-edebiyat-fakultesi",
             },
             {
               id: 3,
-              title: "Mühendislik Fakultesi",
+              title: t("header_nav_academics_faculties_enginnering"),
               link: "/muhendislik-fakultesi",
             },
             {
               id: 4,
-              title: "Orman Fakultesi",
+              title: t("header_nav_academics_faculties_forestry"),
               link: "/orman-fakultesi",
             },
             {
               id: 5,
-              title: "Ilahiyat Fakultesi",
+              title: t("header_nav_academics_faculties_theology"),
               link: "/ilahiyat-fakultesi",
             },
             {
               id: 6,
-              title: "Hopa Iktisadi ve Idari Bilimler Fakultesi",
+              title: t("header_nav_academics_faculties_economics"),
               link: "/hopa-iktisadi-ve-idari-bilimler-fakultesi",
             },
             {
               id: 7,
-              title: "Sanat ve Tasarim Fakultesi",
+              title: t("header_nav_academics_faculties_artandDesign"),
               link: "/sanat-ve-tasarim-fakultesi",
             },
             {
               id: 8,
-              title: "Saglik Bilimleri Fakultesi",
+              title: t("header_nav_academics_faculties_health"),
               link: "/saglik-bilimleri-fakultesi",
             },
             {
               id: 9,
-              title: "Isletme Fakultesi",
+              title: t("header_nav_academics_faculties_management"),
               link: "/isletme-fakultesi",
             },
           ],
         },
         {
           id: 2,
-          title: "Enstituler",
+          title: t("header_nav_academics_enstitutions"),
           subMenu: [
             {
               id: 1,
-              title: "Lisansustu Egitim Enstitusu",
+              title: t("header_nav_academics_enstitutions_master"),
               link: "/lisansustu-egitim-enstitusu",
             },
           ],
         },
         {
           id: 3,
-          title: "Yuksek Okullar",
+          title: t("header_nav_academics_graduateSchools"),
           subMenu: [
             {
               id: 1,
-              title: "Beden Egitimi ve Spor Yuksekokulu",
+              title: t("header_nav_academics_graduateSchools_sports"),
               link: "/beden-egitimi-ve-spor-yuksek-okulu",
             },
             {
               id: 2,
-              title: "Uygulamali Bilimler Yuksekokulu",
+              title: t("header_nav_academics_graduateSchools_appliedSciences"),
               link: "/uygulamali-bilimler-yuksek-okulu",
             },
           ],
         },
         {
           id: 4,
-          title: "Meslek Yuksek Okullari",
+          title: t("header_nav_academics_vocationalSchools"),
           subMenu: [
             {
               id: 1,
-              title: "Artvin Meslek Yuksekokulu",
+              title: t("header_nav_academics_vocationalSchools_artvin"),
               link: "/artvin-meslek-yuksek-okulu",
             },
             {
               id: 2,
-              title: "Arhavi Meslek Yuksekokulu",
+              title: t("header_nav_academics_vocationalSchools_arhavi"),
               link: "/arhavi-meslek-yuksek-okulu",
             },
             {
               id: 3,
-              title: "Borcka Acarlar Meslek Yuksekokulu",
+              title: t("header_nav_academics_vocationalSchools_borcka"),
               link: "/borcka-acarlar-meslek-yuksek-okulu",
             },
             {
               id: 4,
-              title: "Hopa Meslek Yuksekokulu",
+              title: t("header_nav_academics_vocationalSchools_hopa"),
               link: "/hopa-meslek-yuksek-okulu",
             },
             {
               id: 5,
-              title: "Saglik Hizmetleri Meslek Yuksekokulu",
+              title: t("header_nav_academics_vocationalSchools_health"),
               link: "/saglik-hizmetleri-meslek-yuksek-okulu",
             },
             {
               id: 6,
-              title: "Savsat Meslek Yuksekokulu",
+              title: t("header_nav_academics_vocationalSchools_savsat"),
               link: "/savsat-meslek-yuksek-okulu",
             },
             {
               id: 7,
-              title: "Yusufeli Meslek Yuksekokulu",
+              title: t("header_nav_academics_vocationalSchools_yusufeli"),
               link: "/yusufeli-meslek-yuksek-okulu",
             },
           ],
         },
         {
           id: 5,
-          title: "Koordinatorlukler",
+          title: t("header_nav_academics_coordinators"),
           subMenu: [
             {
               id: 1,
-              title: "Kurumsal Iletisim Koordinatorlugu",
+              title: t("header_nav_academics_coordinators_communication"),
               link: "/kurumsal-iletisim-koordinatorlugu",
             },
             {
               id: 2,
-              title: "YLYS Burs Programi Koordinatorlugu",
+              title: t("header_nav_academics_coordinators_ylysScholarship"),
               link: "/ylys-burs-programi-koordinatorlugu",
             },
             {
               id: 3,
-              title: "BAP",
+              title: t("header_nav_academics_coordinators_bap"),
               link: "/bap",
             },
             {
               id: 4,
-              title: "Erasmus",
+              title: t("header_nav_academics_coordinators_erasmus"),
               link: "/erasmus",
             },
             {
               id: 5,
-              title: "Farabi",
+              title: t("header_nav_academics_coordinators_farabi"),
               link: "/farabi",
             },
             {
               id: 6,
-              title: "Mevlana",
+              title: t("header_nav_academics_coordinators_mevlana"),
               link: "/mevlana",
             },
             {
               id: 7,
-              title: "OSYM",
+              title: t("header_nav_academics_coordinators_osym"),
               link: "/osym",
             },
             {
               id: 8,
-              title: "Is Sagligi ve Guvenligi",
+              title: t("header_nav_academics_coordinators_occupationalHealth"),
               link: "/is-sagligi-ve-guvenligi",
             },
             {
               id: 9,
-              title: "Mezunlar Koordinatorlugu",
+              title: t("header_nav_academics_coordinators_graduates"),
               link: "/mezunlar-koordinatorlugu",
             },
             {
               id: 10,
-              title: "AOF",
+              title: t("header_nav_academics_coordinators_aof"),
               link: "/aof",
             },
             {
               id: 11,
-              title: "Dijital Donusum",
+              title: t(
+                "header_nav_academics_coordinators_digitalTransformation"
+              ),
               link: "/digital-donusum",
             },
             {
               id: 12,
-              title: "Kalite",
+              title: t("header_nav_academics_coordinators_aromaticPlants"),
               link: "/kalite",
             },
             {
               id: 13,
-              title: "Tibbi Aromatik Bitkiler Ihtisaslasma Koordinatorlugu",
+              title: t("header_nav_academics_rectorShipDepartments"),
               link: "/tibbi-aromatik-bitkiler-ihtisaslama-koordinatorlugu",
             },
           ],
         },
         {
           id: 6,
-          title: "Rektorluge Bagli Bolumler",
+          title: t("header_nav_academics_rectorShipDepartments"),
           link: "rektorluge-bagli-bolumler",
         },
       ],
@@ -585,90 +587,90 @@ const NavItem = () => {
       subMenu: [
         {
           id: 1,
-          title: "E-islemler",
+          title: t("header_nav_student_eTransactions"),
           subMenu: [
             {
               id: 1,
-              title: "Ogrenci Bilgi Sistemi",
+              title: t("header_nav_student_eTransactions_studentInfo"),
               link: "/ogrenci-bilgi-sistemi",
             },
             {
               id: 2,
-              title: "Ogrenci Numarasi Sorgulama",
+              title: t("header_nav_student_eTransactions_studentId"),
               link: "/ogrenci-numarasi-sorgulama",
             },
             {
               id: 3,
-              title: "Mezun Bilgi Sistemi",
+              title: t("header_nav_student_eTransactions_alumniInfo"),
               link: "/mezun-bilgi-sistemi",
             },
             {
               id: 4,
-              title: "Ulusal Acik Ders Malzemeleri",
+              title: t("header_nav_student_eTransactions_courseMaterials"),
               link: "/ulusal-acik-ders-malzemeleri",
             },
           ],
         },
         {
           id: 2,
-          title: "Tanitim",
+          title: t("header_nav_student_presentation"),
           subMenu: [
             {
               id: 1,
-              title: "Programlar Hakkinda Bilgi",
+              title: t("header_nav_student_presentation_programs"),
               link: "/programlar-hakkinda-bilgi",
             },
             {
               id: 2,
-              title: "Universite Tanitim Brosurleri",
+              title: t("header_nav_student_presentation_brochure"),
               link: "/universite-tanitim-brosurleri",
             },
             {
               id: 3,
-              title: "Aday Ogrenciler",
+              title: t("header_nav_student_presentation_prospectiveStudents"),
               link: "/aday-ogrenciler",
             },
             {
               id: 4,
-              title: "Fotograflarla Universitemiz",
+              title: t("header_nav_student_presentation_universityByPhotos"),
               link: "/fotograflarla-universitemiz",
             },
           ],
         },
         {
           id: 3,
-          title: "Genel",
+          title: t("header_nav_student_general"),
           subMenu: [
             {
               id: 1,
-              title: "Yönetmelikler",
+              title: t("header_nav_student_general_regulations"),
               link: "/yonetmelikler",
             },
             {
               id: 2,
-              title: "Akademik Takvim",
+              title: t("header_nav_student_general_academicCalendar"),
               link: "/akademik-takvim",
             },
             {
               id: 3,
-              title: "Ögrenci Konsey Baskanligi",
+              title: t("header_nav_student_general_studentCouncil"),
               link: "/ogrenci-konsey-baskanligi",
             },
             {
               id: 4,
-              title: "Ögrenci Sayilari",
+              title: t("header_nav_student_general_studentNumbers"),
               link: "/ogrenci-sayilari",
             },
           ],
         },
         {
           id: 4,
-          title: "Engelli Ogrenci Birimi",
+          title: t("header_nav_student_disabledStudent"),
           link: "/engelli-ogrenci-birimi",
         },
         {
           id: 5,
-          title: "Kariyer Merkezi",
+          title: t("header_nav_student_general_jobsCareer"),
           link: "/kariyer-merkezi",
         },
       ],
@@ -679,123 +681,138 @@ const NavItem = () => {
       subMenu: [
         {
           id: 1,
-          title: "Arastirma",
+          title: t("header_nav_research_research"),
           subMenu: [
             {
               id: 1,
-              title: "Kütüphane",
+              title: t("header_nav_research_research_library"),
               link: "/kutuphane",
             },
             {
               id: 2,
-              title: "Herbaryum ARTH",
+              title: t("header_nav_research_research_herbarium"),
               link: "/herbaryum-arth",
             },
             {
               id: 3,
-              title: "BAP",
+              title: t("header_nav_research_research_srp"),
               link: "/bap",
             },
             {
               id: 4,
-              title: "Laboratuvar Altyapisi",
+              title: t("header_nav_research_research_laboratoryInfra"),
               link: "/laboratuvar-altyapisi",
             },
             {
               id: 5,
-              title: "Arastirmaci Veritabani",
+              title: t("header_nav_research_research_researcherDatabase"),
               link: "/arastirmaci-veritabani",
             },
             {
               id: 6,
-              title: "Etik Kurul",
+              title: t("header_nav_research_research_ethicsCommittee"),
               link: "/etik-kurul",
             },
           ],
         },
         {
           id: 2,
-          title: "Bilimsel Dergiler",
+          title: t("header_nav_research_journals"),
           subMenu: [
             {
               id: 1,
-              title: "Uluslararasi Sosyal Bilimler Dergisi",
+              title: t("header_nav_research_journals_socialSciences"),
               link: "external link",
             },
             {
               id: 2,
-              title: "Orman Fakultesi Dergisi",
+              title: t("header_nav_research_journals_forestryFaculty"),
               link: "external link",
             },
             {
               id: 3,
-              title: "Dogal Afetler ve Cevre Dergisi",
+              title: t("header_nav_research_journals_naturalDisasters"),
               link: "external link",
             },
             {
               id: 4,
-              title: "Studies in Educational Research and Development",
+              title: t("header_nav_research_journals_theological"),
               link: "external link",
             },
             {
               id: 5,
-              title: "Turkish Journal of Biodiversity",
+              title: t("header_nav_research_journals_educationalResearch"),
+              link: "external link",
+            },
+            {
+              id: 6,
+              title: t("header_nav_research_journals_biodiversity"),
               link: "external link",
             },
           ],
         },
         {
           id: 3,
-          title: "Arastirma Merkezleri",
+          title: t("header_nav_research_centers"),
           subMenu: [
             {
               id: 1,
-              title: "Endustriyel Tasarimlar Uygulama ve Aras. Merk.",
+              title: t("header_nav_research_centers_contEducation"),
               link: "external link",
             },
             {
               id: 2,
-              title: "Surekli Egitim Uygulama ve Aras. Merk.",
+              title: t("header_nav_research_centers_naturalHazards"),
               link: "external link",
             },
             {
               id: 3,
-              title: "Dogal Afetler Uygulama ve Aras. Merk.",
+              title: t("header_nav_research_centers_caucasus"),
               link: "external link",
             },
             {
               id: 1,
-              title: "Kafkasya ve Cevresi Uygulama ve Aras. Merk.",
+              title: t("header_nav_research_centers_forestry"),
               link: "external link",
             },
             {
               id: 4,
-              title: "Ormancilik Uygulama ve Aras. Merk.",
+              title: t("header_nav_research_centers_scienceTechno"),
               link: "external link",
             },
             {
               id: 5,
-              title: "Bilim Teknoloji Uygulama ve Aras. Merk.",
+              title: t("header_nav_research_centers_psychologicalCounseling"),
               link: "external link",
             },
             {
               id: 6,
-              title: "Psikolojik Danisma ve Rehberlik Uygulama ve Aras. Merk.",
+              title: t("header_nav_research_centers_distanceEducation"),
               link: "external link",
             },
             {
               id: 7,
-              title: "Uzaktan Egitim Uygulama ve Aras. Merk.",
+              title: t("header_nav_research_centers_internationalRelations"),
               link: "external link",
             },
             {
               id: 8,
-              title: "Dis Iliskiler Uygulama ve Aras. Merk.",
+              title: t("header_nav_research_centers_projectCoordination"),
               link: "external link",
             },
             {
               id: 9,
-              title: "Proje Koordinasyon Uygulama ve Aras. Merk.",
+              title: t("header_nav_research_centers_trTeaching"),
+              link: "external link",
+            },
+            {
+              id: 10,
+              title: t("header_nav_research_centers_botanicalGarten"),
+              link: "external link",
+            },
+            {
+              id: 11,
+              title: t("header_nav_research_centers_medicinalAromaticPlants"),
               link: "external link",
             },
           ],
@@ -808,115 +825,115 @@ const NavItem = () => {
       subMenu: [
         {
           id: 1,
-          title: "Personel",
+          title: t("header_nav_eacu_personnel"),
           subMenu: [
             {
               id: 1,
-              title: "EBYS",
+              title: t("header_nav_eacu_personnel_ebys"),
               link: "/ebys",
             },
             {
               id: 2,
-              title: "Akademik Bilgi Sistemi",
+              title: t("header_nav_eacu_personnel_academicInfo"),
               link: "/akademik-bilgi-sistemi",
             },
             {
               id: 3,
-              title: "Mevzuat",
+              title: t("header_nav_eacu_personnel_legislations"),
               link: "/mevzuat",
             },
             {
               id: 4,
-              title: "E-kampus",
+              title: t("header_nav_eacu_personnel_eCampus"),
               link: "/ekampus",
             },
             {
               id: 5,
-              title: "Personel Otomasyonu",
+              title: t("header_nav_eacu_personnel_personnelAutomation"),
               link: "/personel-otomasyonu",
             },
             {
               id: 6,
-              title: "BAP Otomasyonu",
+              title: t("header_nav_eacu_personnel_srpAutomation"),
               link: "/bap-otomasyonu",
             },
           ],
         },
         {
           id: 2,
-          title: "Ogrenci",
+          title: t("header_nav_eacu_student"),
           subMenu: [
             {
               id: 1,
-              title: "Ogrenci Bilgi Sistemi",
+              title: t("header_nav_eacu_student_studentInfo"),
               link: "/ogrenci-bilgi-sistemi",
             },
             {
               id: 2,
-              title: "Mezun Bilgi Sistemi",
+              title: t("header_nav_eacu_student_alumniInfo"),
               link: "/mezun-bilgi-sistemi",
             },
             {
               id: 3,
-              title: "Uzantan Egitim",
+              title: t("header_nav_eacu_student_distanceEducation"),
               link: "/uzaktan-egitim",
             },
           ],
         },
         {
           id: 3,
-          title: "Genel",
+          title: t("header_nav_eacu_general"),
           subMenu: [
             {
               id: 1,
-              title: "Mevzuat",
+              title: t("header_nav_eacu_general_legislation"),
               link: "/mevzuat",
             },
             {
               id: 2,
-              title: "E-posta Islemleri",
+              title: t("header_nav_eacu_general_eMail"),
               link: "/eposta-islemleri",
             },
             {
               id: 3,
-              title: "AKTS ve TYYC Katalogu",
+              title: t("header_nav_eacu_general_acts"),
               link: "/akts-ttyc-katalogu",
             },
             {
               id: 4,
-              title: "Kutuphane",
+              title: t("header_nav_eacu_general_library"),
               link: "/kutuphane",
             },
             {
               id: 5,
-              title: "Bilgi Edinme",
+              title: t("header_nav_eacu_general_information"),
               link: "/bilgi-edinme",
             },
             {
               id: 6,
-              title: "Spor Tesisleri Randevu Sistemi",
+              title: t("header_nav_eacu_general_sportCentreAppointment"),
               link: "/spor-tesisleri-randevu-sistemi",
             },
             {
               id: 7,
-              title: "Online Para Yukleme",
+              title: t("header_nav_eacu_general_onlineLoadMoney"),
               link: "/online-para-yukleme",
             },
             {
               id: 8,
-              title: "Kablosuz Internet",
+              title: t("header_nav_eacu_general_wifi"),
               link: "/kablosuz-internet",
             },
             {
               id: 9,
-              title: "UYBS Program Degerlendirme Sistemi",
+              title: t("header_nav_eacu_general_programAssessment"),
               link: "/uybs-program-degerlendirme-sistemi",
             },
           ],
         },
         {
           id: 4,
-          title: "Acu Mobil",
+          title: t("header_nav_eacu_acuMobile"),
           subMenu: [
             {
               id: 1,
