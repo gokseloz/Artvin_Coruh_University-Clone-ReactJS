@@ -209,6 +209,7 @@
 .nav-item:hover .dropdown1 {
   visibility: visible;
   opacity: 1;
+  transition: var(--speed);
 }
 
 .dropdown1 {
@@ -219,7 +220,7 @@
   padding: 0;
   visibility: hidden;
   opacity: 0;
-  transition: var(--speed);
+  transition: none;
   width: max-content;
 }
 
@@ -257,6 +258,7 @@
   top: 0;
   left: 100%;
   border: 1px solid #d4e9e5;
+  border-top: none;
   padding: 0;
   visibility: hidden;
   opacity: 0;

@@ -14,6 +14,7 @@ import {
   FaSearch,
   FaCaretDown,
   FaCaretRight,
+  FaCaretLeft,
 } from "react-icons/fa";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -950,18 +951,95 @@ const NavItem = () => {
       ],
     },
   ];
-  const [open, setOpen] = useState(false);
+
   return (
     <>
       {menu.map((item) => {
         const { id, title, subMenu } = item;
+        if (id === 4 || id === 5) {
+          return (
+            <li className="nav-item" key={id}>
+              {title}
+              <FaCaretDown className="nav-caret" />
+              <ul className="dropdown1">
+                {subMenu.map((subM) => {
+                  const { id, title, subMenu } = subM;
+
+                  if (subM.hasOwnProperty("subMenu")) {
+                    return (
+                      <li className="dropdownItem">
+                        <a href="#" key={id} className="dropdown-link">
+                          {title}
+                        </a>
+                        <FaCaretLeft className="nav-caret" />
+                        <ul className="dropdown2">
+                          {subMenu.map((subMenu2) => {
+                            const { id, title, link, subMenu } = subMenu2;
+                            if (subMenu2.hasOwnProperty("subMenu")) {
+                              return (
+                                <li className="dropdownItem2">
+                                  <a
+                                    href="#"
+                                    key={id}
+                                    className="dropdown-link2"
+                                  >
+                                    {title}
+                                    <FaCaretRight className="nav-caret2" />
+                                    <ul className="dropdown3">
+                                      {subMenu.map((subMenu3) => {
+                                        const { id, title, link } = subMenu3;
+                                        return (
+                                          <li
+                                            key={id}
+                                            className="dropdownItem3"
+                                          >
+                                            <a
+                                              href="#"
+                                              className="dropdown-link3"
+                                            >
+                                              {title}
+                                            </a>
+                                          </li>
+                                        );
+                                      })}
+                                    </ul>
+                                  </a>
+                                </li>
+                              );
+                            }
+                            return (
+                              <li className="dropdownItem2">
+                                <a href="#" key={id} className="dropdown-link2">
+                                  {title}
+                                </a>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </li>
+                    );
+                  } else {
+                    return (
+                      <li className="dropdownItem">
+                        <a href="#" key={id} className="dropdown-link">
+                          {title}
+                        </a>
+                      </li>
+                    );
+                  }
+                })}
+              </ul>
+            </li>
+          );
+        }
         return (
-          <li className="nav-item" key={id} onMouseOver={() => setOpen(true)}>
+          <li className="nav-item" key={id}>
             {title}
             <FaCaretDown className="nav-caret" />
             <ul className="dropdown1">
               {subMenu.map((subM) => {
                 const { id, title, subMenu } = subM;
+
                 if (subM.hasOwnProperty("subMenu")) {
                   return (
                     <li className="dropdownItem">
