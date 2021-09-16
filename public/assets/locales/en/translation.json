@@ -172,5 +172,11 @@
   "header_nav_eacu_general_wifi": "Wifi",
   "header_nav_eacu_general_programAssessment": "UYBS Program Assessment",
 
-  "header_nav_eacu_acuMobile": "ACU Mobile"
+  "header_nav_eacu_acuMobile": "ACU Mobile",
+
+  "home_slider_savsat": "Savsat",
+  "home_slider_borcka_darkLake": "Borcka Darklake",
+  "home_slider_artvin_dom": "Artvin Dom",
+  "home_slider_artvin_seyitler_campus": "Seyitler Campus",
+  "home_slider_artvin_main_campus": "Main Campus"
 }

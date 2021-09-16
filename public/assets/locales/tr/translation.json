@@ -172,5 +172,11 @@
   "header_nav_eacu_general_wifi": "Kablosuz Internet",
   "header_nav_eacu_general_programAssessment": "ÜYBS Program Degerlendirme Sistemi",
 
-  "header_nav_eacu_acuMobile": "ACU Mobile"
+  "header_nav_eacu_acuMobile": "ACU Mobile",
+
+  "home_slider_savsat": "Şavşat",
+  "home_slider_borcka_darkLake": "Borçka Karagöl",
+  "home_slider_artvin_dom": "Artvin Barajı",
+  "home_slider_artvin_seyitler_campus": "Seyitler Kampüsü",
+  "home_slider_artvin_main_campus": "Ana Kampüs"
 }

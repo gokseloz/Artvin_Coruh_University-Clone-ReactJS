@@ -17,7 +17,8 @@ import ReactCountryFlag from "react-country-flag";
 import i18next from "i18next";
 import Logo from "../../assets/images/artvin.png";
 import "./Home.css";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
+import Slider from "../../components/Slider/Slider";
 
 const languages = [
   {
@@ -689,6 +690,9 @@ const Home = () => {
     },
   ];
 
+  //================================
+  // Adding unique id to menu objects
+  //================================
   let i = 0;
   let menuLn = menu.length;
   for (i; i < menuLn; i++) {
@@ -720,6 +724,9 @@ const Home = () => {
       }
     }
   }
+  //=======================================
+  // End - Adding unique id to menu objects
+  //=======================================
 
   return (
     <>
@@ -815,6 +822,9 @@ const Home = () => {
           <Navbar menu={menu}></Navbar>
         </div>
       </header>
+      <main>
+        <Slider />
+      </main>
     </>
   );
 };

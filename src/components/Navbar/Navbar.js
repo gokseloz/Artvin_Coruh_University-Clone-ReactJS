@@ -1,5 +1,6 @@
 import React from "react";
 import NavItem from "./NavItem";
+import "./Navbar.css";
 
 const Navbar = ({ menu }) => {
   return (
