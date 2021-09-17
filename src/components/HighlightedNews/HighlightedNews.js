@@ -74,8 +74,12 @@ const HighlightedNews = () => {
           items={highlightedNews.map((news) => {
             const { id, img, alt, date, desc } = news;
             return (
-              <article key={id} className="swipeItem-container">
-                <div href="/" className="swipeItem-link">
+              <article
+                key={id}
+                className="swipeItem-container"
+                style={{ userSelect: "none" }}
+              >
+                <div className="swipeItem-link">
                   <figure className="swipeItem-top">
                     <img src={img} alt={alt} />
                     <caption className="swipeItemCaption">
@@ -92,22 +96,6 @@ const HighlightedNews = () => {
           responsive={responsive}
           controlsStrategy="alternate"
         />
-        {/* {highlightedNews.map((news) => {
-            const { id, img, alt, date, desc } = news;
-            return (
-              <article key={id} className="swipeItem">
-                <figure>
-                  <img src={img} alt={alt} />
-                  <caption>
-                    <time>{date}</time>
-                  </caption>
-                </figure>
-                <div>
-                  <p>{desc}</p>
-                </div>
-              </article>
-            );
-          })} */}
       </div>
     </div>
   );

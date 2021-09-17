@@ -19,6 +19,7 @@ import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Slider from "../../components/Slider/Slider";
 import HighlightedNews from "../../components/HighlightedNews/HighlightedNews";
+import Annoucements from "../../components/Announcements/Annoucements";
 
 const languages = [
   {
@@ -727,7 +728,25 @@ const Home = () => {
   //=======================================
   // End - Adding unique id to menu objects
   //=======================================
+  const list = [
+    {
+      id: 1,
+      text: "the quick brown fox",
+    },
+    {
+      id: 2,
+      text: "jumps over",
+    },
+    {
+      id: 3,
+      text: "the lazy dog",
+    },
+  ];
 
+  function changeLanguage(code) {
+    window.location.reload();
+    i18next.changeLanguage(code);
+  }
   return (
     <>
       <header className="header">
@@ -778,7 +797,7 @@ const Home = () => {
                   return (
                     <Dropdown.Item
                       key={id}
-                      onClick={() => i18next.changeLanguage(code)}
+                      onClick={() => changeLanguage(code)}
                     >
                       <ReactCountryFlag
                         countryCode={country_code}
@@ -825,6 +844,11 @@ const Home = () => {
       <main>
         <Slider />
         <HighlightedNews />
+        <div className="newsAndQuickLinks">
+          <div className="newsAndQuickLinks-container">
+            <Annoucements />
+          </div>
+        </div>
       </main>
     </>
   );

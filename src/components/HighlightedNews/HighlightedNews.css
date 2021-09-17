@@ -52,6 +52,7 @@
 .swipeItem-desc {
   padding: 0.6rem;
   text-align: left;
+  background-color: rgba(48, 114, 104, 0.03);
 }
 
 .swipeItem-desc a {

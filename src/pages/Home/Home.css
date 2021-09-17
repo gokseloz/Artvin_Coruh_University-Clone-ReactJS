@@ -176,3 +176,11 @@
   right: 1rem;
   color: var(--clr-text-lightGray);
 }
+
+.newsAndQuickLinks {
+  position: relative;
+  max-width: var(--fullWidth);
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  margin-top: 10px;
+}
