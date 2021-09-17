@@ -1,0 +1,85 @@
+.highlightedNews {
+  margin-top: 5px;
+}
+
+.highlightedNews-container {
+  position: relative;
+  max-width: var(--fullWidth);
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+.swipeItem-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.swipeItem-top {
+  position: relative;
+  margin: 0;
+}
+
+.swipeItem-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(48, 114, 104, 0.5);
+  transform: translateX(-100%);
+  transition: var(--speed);
+}
+
+.swipeItem-top:hover::before {
+  transform: translateX(0%);
+}
+
+.swipeItem-top:hover .swipeItem-desc {
+  background-color: rgba(48, 114, 104, 0.5);
+}
+
+.swipeItemCaption {
+  position: absolute;
+  width: max-content;
+  bottom: 0;
+  font-size: 0.75rem;
+  background-color: #a7331a;
+  color: #fff;
+  padding: 0.3em 0.6em;
+  text-align: center;
+}
+
+.swipeItem-desc {
+  padding: 0.6rem;
+  text-align: left;
+}
+
+.swipeItem-desc a {
+  text-decoration: none;
+  white-space: normal;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-size: 1rem;
+  color: #02322d;
+}
+
+.swipeItem-desc a:hover {
+  text-decoration: underline;
+}
+
+.swipeItem-link {
+  text-decoration: none;
+}
+
+.swipeItem-link:hover .swipeItem-desc {
+  background-color: #d6e9e1;
+}
+
+.alice-carousel__stage {
+  display: flex;
+  gap: 20px;
+}

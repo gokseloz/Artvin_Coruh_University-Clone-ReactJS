@@ -1,7 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import { ExternalLink } from "react-external-link";
 import {
   FaFacebookSquare,
@@ -19,6 +18,7 @@ import Logo from "../../assets/images/artvin.png";
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Slider from "../../components/Slider/Slider";
+import HighlightedNews from "../../components/HighlightedNews/HighlightedNews";
 
 const languages = [
   {
@@ -824,6 +824,7 @@ const Home = () => {
       </header>
       <main>
         <Slider />
+        <HighlightedNews />
       </main>
     </>
   );

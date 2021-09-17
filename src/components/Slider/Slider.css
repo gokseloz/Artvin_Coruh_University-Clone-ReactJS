@@ -12,6 +12,7 @@
   position: relative;
   max-width: var(--fullWidth);
   margin: 0 auto;
+  padding: 0 0.5rem;
 }
 
 .carousel .slide .legend {
@@ -27,14 +28,25 @@
   opacity: 0.5;
   padding: 0.75em;
   border-radius: 1em;
-  animation: legendAnim 0.5s;
+}
+.carousel.carousel-slider .control-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 65px;
+  background: #006a5fb3;
+  opacity: 1;
 }
 
-@keyframes legendAnim {
-  0% {
-    transform: translateX(20rem);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.carousel.carousel-slider .control-arrow:hover {
+  opacity: 0.8;
+  background: #006a5fb3;
+}
+
+.carousel .control-prev.control-arrow {
+  left: 2%;
+}
+
+.carousel .control-next.control-arrow {
+  right: 2%;
 }
