@@ -206,5 +206,8 @@
 
   "home_announcements_current": "Güncel",
   "home_announcements_administ": "İdari",
-  "home_announcements_student": "Öğrenci"
+  "home_announcements_student": "Öğrenci",
+
+  "home_activitiesNews_activity": "Aktivite",
+  "home_activitiesNews_calendar": "Takvim"
 }

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "./Announcements.css";
-import NewsTicker from "react-advanced-news-ticker";
 import Cookies from "universal-cookie";
 const cookies = new Cookies();
 
@@ -83,7 +82,30 @@ const Annoucements = () => {
     {
       id: "announcementsTabs2",
       title: t("home_announcements_administ"),
-      announcements: [],
+      announcements: [
+        {
+          id: "announcementadminist1",
+          date: cookies.get("i18next") === "tr" ? "10 Eki" : "10 Oct",
+          announcement:
+            cookies.get("i18next") === "tr" ? "Başsağlığı" : "Condolences ",
+        },
+        {
+          id: "announcementadminist2",
+          date: cookies.get("i18next") === "tr" ? "22 Şub" : "22 Feb",
+          announcement:
+            cookies.get("i18next") === "tr"
+              ? "Öğretim Elemanı İlanı"
+              : "Instructor Recruitment",
+        },
+        {
+          id: "announcementadminist3",
+          date: cookies.get("i18next") === "tr" ? "30 Mar" : "30 Mar",
+          announcement:
+            cookies.get("i18next") === "tr"
+              ? "Kurs Başvurularımız Başlamıştır"
+              : "Our Course Applications Have Started",
+        },
+      ],
     },
     {
       id: "announcementsTabs3",
@@ -117,7 +139,7 @@ const Annoucements = () => {
     },
   ];
 
-  const { id, title, announcements } = tabs[value];
+  const { announcements } = tabs[value];
 
   return (
     <section className="announcements">
@@ -125,33 +147,32 @@ const Annoucements = () => {
         <div className="announcements-heading">
           <h3 className="announcements-header">Duyurular</h3>
           <div className="announcements-tabs">
-            {tabs.map((tab) => {
+            {tabs.map((tab, index) => {
               return (
-                <button key={tab.id} className="announcements-tab">
+                <button
+                  key={tab.id}
+                  className={`announcements-tab ${
+                    index === value && "active-btn"
+                  }`}
+                  onClick={() => {
+                    setValue(index);
+                  }}
+                >
                   {tab.title}
                 </button>
               );
             })}
           </div>
         </div>
-        <NewsTicker
-          maxRows={6}
-          speed={600}
-          duration={4000}
-          autoStart={false}
-          pauseOnHover={false}
-        >
-          {announcements.map((anc) => (
-            <div
-              key={anc.id}
-              className="announcement-container"
-              style={{ display: "flex" }}
-            >
-              <div className="announcement-date">{anc.date}</div>
-              <div className="announcement-text">{anc.announcement}</div>
+        {announcements.map((anc) => (
+          <div key={anc.id} className="announcement-container">
+            <div className="announcement-date">
+              <span>{anc.date.split(" ")[0]}</span>
+              <span>{anc.date.split(" ")[1]}</span>
             </div>
-          ))}
-        </NewsTicker>
+            <div className="announcement-text">{anc.announcement}</div>
+          </div>
+        ))}
       </div>
     </section>
   );

@@ -744,7 +744,6 @@ const Home = () => {
   ];
 
   function changeLanguage(code) {
-    window.location.reload();
     i18next.changeLanguage(code);
   }
   return (

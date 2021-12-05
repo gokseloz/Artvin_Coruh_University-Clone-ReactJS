@@ -206,5 +206,8 @@
 
   "home_announcements_current": "Current",
   "home_announcements_administ": "Admins.",
-  "home_announcements_student": "Student"
+  "home_announcements_student": "Student",
+
+  "home_activitiesNews_activity": "Activity",
+  "home_activitiesNews_calendar": "Calendar"
 }
