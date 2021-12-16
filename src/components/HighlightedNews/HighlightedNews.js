@@ -4,12 +4,12 @@ import "./HighlightedNews.css";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-import highlightedNews1 from "../../images/homeHighlightednews/highlightednews1.jpg";
-import highlightedNews2 from "../../images/homeHighlightednews/highlightednews2.jpg";
-import highlightedNews3 from "../../images/homeHighlightednews/highlightednews3.jpg";
-import highlightedNews4 from "../../images/homeHighlightednews/highlightednews4.jpg";
-import highlightedNews5 from "../../images/homeHighlightednews/highlightednews5.jpg";
-import highlightedNews6 from "../../images/homeHighlightednews/highlightednews6.jpg";
+import highlightedNews1 from "../../images/homepage/highlightednews/highlightednews1.jpg";
+import highlightedNews2 from "../../images/homepage/highlightednews/highlightednews2.jpg";
+import highlightedNews3 from "../../images/homepage/highlightednews/highlightednews3.jpg";
+import highlightedNews4 from "../../images/homepage/highlightednews/highlightednews4.jpg";
+import highlightedNews5 from "../../images/homepage/highlightednews/highlightednews5.jpg";
+import highlightedNews6 from "../../images/homepage/highlightednews/highlightednews6.jpg";
 
 const HighlightedNews = () => {
   const { t } = useTranslation();
@@ -82,9 +82,9 @@ const HighlightedNews = () => {
                 <div className="swipeItem-link">
                   <figure className="swipeItem-top">
                     <img src={img} alt={alt} />
-                    <caption className="swipeItemCaption">
+                    <figcaption className="swipeItemCaption">
                       <time>{date}</time>
-                    </caption>
+                    </figcaption>
                   </figure>
                   <div className="swipeItem-desc">
                     <a href="/">{desc}</a>
