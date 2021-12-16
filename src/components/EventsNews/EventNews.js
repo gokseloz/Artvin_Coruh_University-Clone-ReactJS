@@ -29,6 +29,22 @@ const EventNews = () => {
               ? "Erasmus+ Öğrenci Öğrenim ve Staj Hareketliliği Bilgilendirme Toplantısı."
               : "Erasmus+ Student Learning and Internship Mobility Information Meeting",
         },
+        {
+          id: "EventsNewsActivity3",
+          date: cookies.get("i18next") === "tr" ? "6 Haz" : "6 Jun",
+          event:
+            cookies.get("i18next") === "tr"
+              ? "Web of Science Online Eğitimleri"
+              : "Web of Science Online Courses",
+        },
+        {
+          id: "EventsNewsActivity4",
+          date: cookies.get("i18next") === "tr" ? "26 Nis" : "26 Apr",
+          event:
+            cookies.get("i18next") === "tr"
+              ? "Erasmus+ Öğrenci Öğrenim ve Staj Hareketliliği Bilgilendirme Toplantısı."
+              : "Erasmus+ Student Learning and Internship Mobility Information Meeting",
+        },
       ],
     },
   ];

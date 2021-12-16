@@ -61,6 +61,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  max-height: 256px;
+  overflow: hidden;
 }
 
 .event-container {
