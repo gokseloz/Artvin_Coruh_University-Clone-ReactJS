@@ -71,7 +71,7 @@
 }
 
 .header-socialMediaIcon {
-  color: #fdba04;
+  color: var(--clr-text-lightMustard);
 }
 
 /* Dropdown reset */
@@ -100,9 +100,9 @@
   margin-right: 4px;
 }
 
-/* ========== */
+/* =========== */
 /* HEADER MAIN */
-/* ========== */
+/* =========== */
 .header-main {
   margin-top: 0.625rem;
   display: flex;
@@ -183,4 +183,9 @@
   margin: 0 auto;
   padding: 0 0.5rem;
   margin-top: 10px;
+}
+
+.newsAndQuickLinks-container {
+  display: flex;
+  gap: 1rem;
 }

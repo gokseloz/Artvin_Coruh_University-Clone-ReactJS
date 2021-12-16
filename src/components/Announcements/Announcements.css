@@ -5,7 +5,7 @@ ul {
 }
 
 .announcements {
-  width: 33%;
+  width: 38%;
   height: 400px;
   overflow: hidden;
 }
@@ -78,6 +78,7 @@ ul {
 
 .announcement-container:hover {
   background-color: #d6e9e1;
+  cursor: pointer;
 }
 
 .announcement-date {

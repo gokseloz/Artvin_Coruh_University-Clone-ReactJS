@@ -204,10 +204,46 @@
   "home_highlightednews6_date": "13 Ağustos 2021, Cuma",
   "home_highlightednews6_description": "Seyitler Yerleşkesi Cami Yaptırma ve Yaşatma Derneği Heyetinden Rektörümüz Prof. Dr. Bilgin’e Ziyaret",
 
+  "home_announcements": "Duyurular",
   "home_announcements_current": "Güncel",
   "home_announcements_administ": "İdari",
   "home_announcements_student": "Öğrenci",
 
+  "home_activitiesNews": "Etkinlikler / Haberler",
   "home_activitiesNews_activity": "Aktivite",
-  "home_activitiesNews_calendar": "Takvim"
+  "home_activitiesNews_calendar": "Takvim",
+
+  "home_fastAccess": "Hızlı Erişim",
+  "home_fastAcceess_1": "Öğrenci/Akademik Bilgi Sistemi",
+  "home_fastAcceess_2": "Üniversite Bilgi Yönetim Sistemi",
+  "home_fastAcceess_3": "E-Belge Yönetim Sistemi",
+  "home_fastAcceess_4": "E-Posta İşlemleri",
+  "home_fastAcceess_5": "Akademik Takvim",
+  "home_fastAcceess_6": "Uzaktan Eğitim Platformu",
+  "home_fastAcceess_7": "Kütüphane",
+  "home_fastAcceess_8": "Dış İlişkiler",
+  "home_fastAcceess_9": "COVID-19 Bilgilendirme Sayfası",
+  "home_fastAcceess_10": "Personel Otomasyonu",
+
+  "footer_contact_header": "İletişim",
+  "footer_contact_desc": "Artvin Çoruh Üniversitesi Rektörlüğü 08100 Seyitler, Merkez, Artvin, Türkiye",
+  "footer_contact_phone": "Telefon: +90 466 215 1000",
+  "footer_contact_fax": "Faks: +90 466 215 1055",
+
+  "footer_links_header": "Bağlantılar",
+  "footer_links_virtualTour": "Sanal Tur",
+  "footer_links_promotion": "Tanıtım",
+  "footer_links_bulletin": "İlanlar",
+  "footer_links_getInfo": "Bilgi Edinme",
+  "footer_links_cimer": "CİMER",
+  "footer_links_wireless": "Kablosuz İnternet",
+  "footer_links_offCampusAccess": "Kampüs Dışı Erişim",
+  "footer_links_planeterium": "Planeteryum",
+  "footer_links_alumniInfo": "Mezun Bilgi Sistemi",
+  "footer_links_personals": "Personel Listesi",
+  "footer_links_acuByNumbers": "Sayılarla AÇÜ",
+  "footer_links_contact": "İletişim",
+
+  "footer_copyRight": "Her hakkı Artvin Çoruh Üniversitesi'ne aittir",
+  "footer_uniSlogan": "'Tıbbi ve Aromatik Bitkiler' Alanında İhtisas Üniversitesi"
 }

@@ -20,6 +20,9 @@ import Navbar from "../../components/Navbar/Navbar";
 import Slider from "../../components/Slider/Slider";
 import HighlightedNews from "../../components/HighlightedNews/HighlightedNews";
 import Annoucements from "../../components/Announcements/Annoucements";
+import EventNews from "../../components/EventsNews/EventNews";
+import Fastaccess from "../../components/FastAccess/FastAccess";
+import Footer from "../../components/Footer/Footer";
 
 const languages = [
   {
@@ -846,8 +849,11 @@ const Home = () => {
         <div className="newsAndQuickLinks">
           <div className="newsAndQuickLinks-container">
             <Annoucements />
+            <EventNews />
+            <Fastaccess />
           </div>
         </div>
+        <Footer />
       </main>
     </>
   );

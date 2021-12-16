@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import "./EventNews.css";
 import Cookies from "universal-cookie";
 const cookies = new Cookies();
 
@@ -30,11 +31,6 @@ const EventNews = () => {
         },
       ],
     },
-    {
-      id: "EventsNewsTab2",
-      title: t("home_activitiesNews_calendar"),
-      events: [],
-    },
   ];
 
   const { events } = tabs[value];
@@ -43,7 +39,7 @@ const EventNews = () => {
     <section className="events">
       <div className="events-container">
         <div className="events-heading">
-          <h3 className="events-header">Duyurular</h3>
+          <h3 className="events-header">{t("home_activitiesNews")}</h3>
           <div className="events-tabs">
             {tabs.map((tab, index) => {
               return (
@@ -63,10 +59,10 @@ const EventNews = () => {
         {events.map((ev) => (
           <div key={ev.id} className="event-container">
             <div className="event-date">
-              <span>{events.date.split(" ")[0]}</span>
-              <span>{events.date.split(" ")[1]}</span>
+              <span>{ev.date?.split(" ")[0]}</span>
+              <span>{ev.date?.split(" ")[1]}</span>
             </div>
-            <div className="event-text">{events.announcement}</div>
+            <div className="event-text">{ev.event}</div>
           </div>
         ))}
       </div>

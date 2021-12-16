@@ -204,10 +204,46 @@
   "home_highlightednews6_date": "13 August 2021, Friday",
   "home_highlightednews6_description": "Seyitler Campus Mosque Construction and Sustenance Association Committee visit Our Rector Prof. Dr. Bilgin",
 
+  "home_announcements": "Announcements",
   "home_announcements_current": "Current",
   "home_announcements_administ": "Admins.",
   "home_announcements_student": "Student",
 
+  "home_activitiesNews": "Activites / News",
   "home_activitiesNews_activity": "Activity",
-  "home_activitiesNews_calendar": "Calendar"
+  "home_activitiesNews_calendar": "Calendar",
+
+  "home_fastAccess": "Hızlı Erişim",
+  "home_fastAcceess_1": "Student/Academic Information System",
+  "home_fastAcceess_2": "University Information Management System",
+  "home_fastAcceess_3": "E-Document Management System",
+  "home_fastAcceess_4": "E-Mail Transactions",
+  "home_fastAcceess_5": "Academic calendar",
+  "home_fastAcceess_6": "Distance Education Platform",
+  "home_fastAcceess_7": "Library",
+  "home_fastAcceess_8": "International Office",
+  "home_fastAcceess_9": "COVID-19 Information Page",
+  "home_fastAcceess_10": "Personnel Automation",
+
+  "footer_contact_header": "Contact",
+  "footer_contact_desc": "Rector's Office of Artvin Coruh University 08100, Seyitler, Centrum, Artvin, Turkey",
+  "footer_contact_phone": "Phone: +90 466 215 1000",
+  "footer_contact_fax": "Fax: +90 466 215 1055",
+
+  "footer_links_header": "Links",
+  "footer_links_virtualTour": "Virtual Tour",
+  "footer_links_promotion": "Promotion",
+  "footer_links_bulletin": "Bulletin",
+  "footer_links_getInfo": "Getting Info",
+  "footer_links_cimer": "CİMER",
+  "footer_links_wireless": "Wireless Internet",
+  "footer_links_offCampusAccess": "Off-Campus Access",
+  "footer_links_planeterium": "Planetarium",
+  "footer_links_alumniInfo": "Alumni Information",
+  "footer_links_personals": "Personel Listesi",
+  "footer_links_acuByNumbers": "ACU by numbers",
+  "footer_links_contact": "Contact",
+
+  "footer_copyRight": "Artvin Coruh Universityö Inc. All rights reserved",
+  "footer_uniSlogan": "Specialization University in the Field of 'Medicinal and Aromatic Plants'"
 }

@@ -1,0 +1,60 @@
+.fastAccesses {
+  width: 24%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.fastAccesses-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #606e6c;
+}
+
+.fastAccesses-heading {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-bg-darkGreen);
+  position: relative;
+}
+
+.fastAccesses-heading::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  right: 0;
+  margin: 0;
+  width: 0;
+  height: 0;
+  border-top: solid 12px #007468;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+}
+
+.fastAccesses-header {
+  color: var(--clr-text-lightMustard);
+  padding: 0.5em;
+  margin: 0;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.375rem;
+}
+
+.fastAccess-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem 0;
+}
+
+.fastAccess-item:hover {
+  background-color: #53605e;
+  cursor: pointer;
+}
+
+.fastAccess-text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #ecfcfa;
+  padding: 4px 12px;
+}

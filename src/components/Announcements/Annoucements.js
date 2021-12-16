@@ -145,7 +145,7 @@ const Annoucements = () => {
     <section className="announcements">
       <div className="announcements-container">
         <div className="announcements-heading">
-          <h3 className="announcements-header">Duyurular</h3>
+          <h3 className="announcements-header">{t("home_announcements")}</h3>
           <div className="announcements-tabs">
             {tabs.map((tab, index) => {
               return (
