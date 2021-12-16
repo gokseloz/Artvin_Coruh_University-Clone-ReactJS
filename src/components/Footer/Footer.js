@@ -2,7 +2,6 @@
 import React from "react";
 import logoAndUni from "../../images/footer/logoAndUni.png";
 import "./Footer.css";
-import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 import { ImLocation } from "react-icons/im";
 import { FaPhone, FaFax, FaChevronRight } from "react-icons/fa";

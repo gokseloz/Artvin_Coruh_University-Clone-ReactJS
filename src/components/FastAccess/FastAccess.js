@@ -2,8 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import "./FastAccess.css";
 import { FaCaretRight } from "react-icons/fa";
-import Cookies from "universal-cookie";
-const cookies = new Cookies();
 
 const Fastaccess = () => {
   const { t } = useTranslation();

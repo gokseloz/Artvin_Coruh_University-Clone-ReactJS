@@ -731,20 +731,6 @@ const Home = () => {
   //=======================================
   // End - Adding unique id to menu objects
   //=======================================
-  const list = [
-    {
-      id: 1,
-      text: "the quick brown fox",
-    },
-    {
-      id: 2,
-      text: "jumps over",
-    },
-    {
-      id: 3,
-      text: "the lazy dog",
-    },
-  ];
 
   function changeLanguage(code) {
     i18next.changeLanguage(code);
