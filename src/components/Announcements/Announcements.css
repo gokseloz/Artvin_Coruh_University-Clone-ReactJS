@@ -69,14 +69,24 @@ ul {
   bottom: 10px;
 }
 
-.announcement-container {
+.announcement-list-container {
+  height: 18rem;
+  overflow: auto;
+  position: relative;
+}
+
+.announcement-list {
+  /* position: absolute; */
+}
+
+.announcement-item {
   display: flex;
   gap: 0.5rem;
   align-items: center;
   padding: 5px;
 }
 
-.announcement-container:hover {
+.announcement-item:hover {
   background-color: #d6e9e1;
   cursor: pointer;
 }

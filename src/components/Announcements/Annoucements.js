@@ -164,15 +164,19 @@ const Annoucements = () => {
             })}
           </div>
         </div>
-        {announcements.map((anc) => (
-          <div key={anc.id} className="announcement-container">
-            <div className="announcement-date">
-              <span>{anc.date.split(" ")[0]}</span>
-              <span>{anc.date.split(" ")[1]}</span>
-            </div>
-            <div className="announcement-text">{anc.announcement}</div>
-          </div>
-        ))}
+        <div className="announcement-list-container">
+          <ul className="announcement-list">
+            {announcements.map((anc) => (
+              <li key={anc.id} className="announcement-item">
+                <div className="announcement-date">
+                  <span>{anc.date.split(" ")[0]}</span>
+                  <span>{anc.date.split(" ")[1]}</span>
+                </div>
+                <div className="announcement-text">{anc.announcement}</div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );
