@@ -5,3 +5,6 @@
 - For now only the homepage is cloned
 - Not responsive yet
 - Supports multilanguage with i18n
+
+## View Demo
+- [Demo](https://gokseloz-acu-clone-reactjs.netlify.app/)
