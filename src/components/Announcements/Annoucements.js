@@ -58,8 +58,8 @@ const Annoucements = () => {
           date: cookies.get("i18next") === "tr" ? "10 Eyl" : "10 Sept",
           announcement:
             cookies.get("i18next") === "tr"
-              ? "2021 Yılı Üniversitemize Kayıt Hakkı Kazanan Uluslararası (Yabancı Uyruklu) Öğrencilerin Yerleşme Sonuçları ve Kayıt İşlemleri / 2021-List of Foreign Students Admitted to Our University For Registration"
-              : "Placement Results and Registration Procedures of International (Foreign National) Students Who Have Been Enrolled in our University in 2021 / 2021-List of Foreign Students Admitted to Our University For Registration",
+              ? "2021 Yılı Üniversitemize Kayıt Hakkı Kazanan Uluslararası (Yabancı Uyruklu) Öğrencilerin Yerleşme Sonuçları ve Kayıt İşlemleri"
+              : "List of Foreign Students Admitted to Our University For Registration in 2021",
         },
         {
           id: "announcementCurrent7",

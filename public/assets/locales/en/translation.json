@@ -213,7 +213,7 @@
 
   "home_activitiesNews": "Activites / News",
   "home_activitiesNews_activity": "Activity",
-  "home_activitiesNews_calendar": "Calendar",
+  "home_activitiesNews_introductionVideo": "Introduction Video",
 
   "home_fastAccess": "Hızlı Erişim",
   "home_fastAcceess_1": "Student/Academic Information System",
@@ -246,6 +246,6 @@
   "footer_links_acuByNumbers": "ACU by numbers",
   "footer_links_contact": "Contact",
 
-  "footer_copyRight": "Artvin Coruh Universityö Inc. All rights reserved",
+  "footer_copyRight": "Artvin Coruh University Inc. All rights reserved",
   "footer_uniSlogan": "Specialization University in the Field of 'Medicinal and Aromatic Plants'"
 }

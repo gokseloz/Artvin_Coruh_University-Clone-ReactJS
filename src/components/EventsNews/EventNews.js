@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaChevronDown, FaChevronUp, FaVideo } from "react-icons/fa";
+import introduction from "../../images/homepage/activities/introduction.jpg";
 import "./EventNews.css";
 import Cookies from "universal-cookie";
 const cookies = new Cookies();
@@ -141,6 +142,18 @@ const EventNews = () => {
         </div>
 
         {renderedBtns}
+      </div>
+      <div className="intro-video">
+        <figure className="intro-img-container">
+          <img src={introduction} alt="introduction" className="intro-img" />
+          <figcaption className="intro-caption">
+            {t("home_activitiesNews_introductionVideo")}
+          </figcaption>
+          <FaVideo className="intro-video-icon" />
+          <figcaption className="intro-caption-active">
+            {t("home_activitiesNews_introductionVideo")}
+          </figcaption>
+        </figure>
       </div>
     </section>
   );
