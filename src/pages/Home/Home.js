@@ -14,7 +14,7 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
 import ReactCountryFlag from "react-country-flag";
 import i18next from "i18next";
-import Logo from "../../assets/images/artvin.png";
+import Logo from "../../assets/images/homepage/header/artvin-logo.png";
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Slider from "../../components/Slider/Slider";

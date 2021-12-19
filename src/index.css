@@ -36,6 +36,10 @@ body {
   --clr-bg-darkGreen: #007468;
   --clr-bg-midDarkGreen: #006a5f;
   --clr-bg-veryDarkGray: #606e6c;
+  --clr-bg-lightGreen: #d6e9e1;
+  --clr-bg-veryLightDarkGreen: #f3faf9;
+
+  --clr-bg-midDarkGrayGreen: #5a7874;
 
   --clr-text-lightMustard: #fdba04;
   --clr-text-darkMustard: #ff9806;
@@ -51,6 +55,8 @@ body {
   --clr-text-lightGray: #78a29c;
   --clr-text-midLightGray: #e4f4f2;
   --clr-text-veryLightGray: #ecfcfa;
+
+  --clr-text-veryLightYellow: #f3f1ec;
 
   --clr-bg-hover-LightGray: #e5e8eb;
   --clr-text-hover-Black: #242526;

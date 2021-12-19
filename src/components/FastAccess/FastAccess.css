@@ -7,7 +7,7 @@
 .fastAccesses-container {
   display: flex;
   flex-direction: column;
-  background-color: #606e6c;
+  background-color: var(--clr-bg-veryDarkGray);
 }
 
 .fastAccesses-heading {

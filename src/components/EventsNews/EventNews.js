@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { FaChevronDown, FaChevronUp, FaVideo } from "react-icons/fa";
-import introduction from "../../images/homepage/activities/introduction.jpg";
+import introduction from "../../assets/images/homepage/activities/introduction.jpg";
 import "./EventNews.css";
 import Cookies from "universal-cookie";
 const cookies = new Cookies();

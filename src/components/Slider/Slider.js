@@ -2,11 +2,11 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { useTranslation } from "react-i18next";
 import { Carousel } from "react-responsive-carousel";
-import slide1 from "../../images/homepage/slides/slide1.jpg";
-import slide2 from "../../images/homepage/slides/slide2.jpg";
-import slide3 from "../../images/homepage/slides/slide3.jpg";
-import slide4 from "../../images/homepage/slides/slide4.jpg";
-import slide5 from "../../images/homepage/slides/slide5.jpg";
+import slide1 from "../../assets/images/homepage/slides/slide1.jpg";
+import slide2 from "../../assets/images/homepage/slides/slide2.jpg";
+import slide3 from "../../assets/images/homepage/slides/slide3.jpg";
+import slide4 from "../../assets/images/homepage/slides/slide4.jpg";
+import slide5 from "../../assets/images/homepage/slides/slide5.jpg";
 import "./Slider.css";
 
 const Slider = () => {

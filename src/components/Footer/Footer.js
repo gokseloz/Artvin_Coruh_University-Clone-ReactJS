@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import logoAndUni from "../../images/footer/logoAndUni.png";
+import logoAndUni from "../../assets/images/footer/logoAndUni.png";
 import "./Footer.css";
 import { useTranslation } from "react-i18next";
 import { ImLocation } from "react-icons/im";

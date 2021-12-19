@@ -65,7 +65,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   font-size: 1rem;
-  color: #02322d;
+  color: var(--clr-text-veryDarkGreen);
 }
 
 .swipeItem-desc a:hover {
@@ -77,7 +77,7 @@
 }
 
 .swipeItem-link:hover .swipeItem-desc {
-  background-color: #d6e9e1;
+  background-color: var(--clr-bg-lightGreen);
 }
 
 .alice-carousel__stage {

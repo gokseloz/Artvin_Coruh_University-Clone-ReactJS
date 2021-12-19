@@ -14,7 +14,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
-  background-color: #f3faf9;
+  background-color: var(--clr-bg-veryLightDarkGreen);
   padding-bottom: 0.5rem;
 }
 
@@ -90,16 +90,16 @@ ul {
 }
 
 .announcement-item:hover {
-  background-color: #d6e9e1;
+  background-color: var(--clr-bg-lightGreen);
   cursor: pointer;
 }
 
 .announcement-date {
-  background-color: #5a7874;
+  background-color: var(--clr-bg-midDarkGrayGreen);
   width: 43px;
   display: grid;
   place-items: center;
-  color: #f3f1ec;
+  color: var(--clr-text-veryLightYellow);
 }
 .announcement-date span {
   color: inherit;

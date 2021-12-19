@@ -4,12 +4,12 @@ import "./HighlightedNews.css";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-import highlightedNews1 from "../../images/homepage/highlightednews/highlightednews1.jpg";
-import highlightedNews2 from "../../images/homepage/highlightednews/highlightednews2.jpg";
-import highlightedNews3 from "../../images/homepage/highlightednews/highlightednews3.jpg";
-import highlightedNews4 from "../../images/homepage/highlightednews/highlightednews4.jpg";
-import highlightedNews5 from "../../images/homepage/highlightednews/highlightednews5.jpg";
-import highlightedNews6 from "../../images/homepage/highlightednews/highlightednews6.jpg";
+import highlightedNews1 from "../../assets/images/homepage/highlightednews/highlightednews1.jpg";
+import highlightedNews2 from "../../assets/images/homepage/highlightednews/highlightednews2.jpg";
+import highlightedNews3 from "../../assets/images/homepage/highlightednews/highlightednews3.jpg";
+import highlightedNews4 from "../../assets/images/homepage/highlightednews/highlightednews4.jpg";
+import highlightedNews5 from "../../assets/images/homepage/highlightednews/highlightednews5.jpg";
+import highlightedNews6 from "../../assets/images/homepage/highlightednews/highlightednews6.jpg";
 
 const HighlightedNews = () => {
   const { t } = useTranslation();
