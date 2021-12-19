@@ -57,12 +57,23 @@
   bottom: 10px;
 }
 
+.event-list-container {
+  height: 11rem;
+  overflow: hidden;
+  position: relative;
+}
+.event-list {
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+
 .events-container {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
-  max-height: 256px;
   overflow: hidden;
+  background-color: #f3faf9;
+  padding-bottom: 0.5rem;
 }
 
 .event-container {

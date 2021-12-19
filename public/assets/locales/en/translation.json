@@ -208,6 +208,8 @@
   "home_announcements_current": "Current",
   "home_announcements_administ": "Admins.",
   "home_announcements_student": "Student",
+  "home_announcements_nextBtn": "Next",
+  "home_announcements_prevBtn": "Prev",
 
   "home_activitiesNews": "Activites / News",
   "home_activitiesNews_activity": "Activity",

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import "./EventNews.css";
 import Cookies from "universal-cookie";
 const cookies = new Cookies();
@@ -7,6 +8,8 @@ const cookies = new Cookies();
 const EventNews = () => {
   const { t } = useTranslation();
   const [value, setValue] = useState(0);
+  const [click, setClick] = useState(0);
+  const eventListRef = useRef();
 
   const tabs = [
     {
@@ -51,6 +54,65 @@ const EventNews = () => {
 
   const { events } = tabs[value];
 
+  const nextAnc = () => {
+    const topValue = `${click * -60}px`;
+    eventListRef.current.style.top = topValue;
+  };
+  const prevAnc = () => {
+    const topValue = `${click * 60}px`;
+    eventListRef.current.style.top = topValue;
+  };
+
+  const incClick = () => {
+    if (click > events.length - 1) setClick(0);
+    else {
+      nextAnc();
+    }
+  };
+
+  const decClick = () => {
+    if (click < 0) setClick(0);
+    else {
+      prevAnc();
+    }
+  };
+
+  useEffect(() => {
+    decClick();
+    incClick();
+  }, [click]);
+
+  const isShowBtns = tabs[value].events.length > 3;
+
+  const renderedBtns = isShowBtns && (
+    <div className="announcement-btn-container">
+      <button
+        className="announcement-btn announcement-next-btn"
+        onClick={() => setClick(click + 1)}
+      >
+        <FaChevronDown />
+        {t("home_announcements_nextBtn")}
+      </button>
+      <button
+        className="announcement-btn announcement-prev-btn"
+        onClick={() => setClick(click - 1)}
+      >
+        <FaChevronUp />
+        {t("home_announcements_prevBtn")}
+      </button>
+    </div>
+  );
+
+  const eventList = events.map((ev) => (
+    <li key={ev.id} className="event-container">
+      <div className="event-date">
+        <span>{ev.date?.split(" ")[0]}</span>
+        <span>{ev.date?.split(" ")[1]}</span>
+      </div>
+      <div className="event-text">{ev.event}</div>
+    </li>
+  ));
+
   return (
     <section className="events">
       <div className="events-container">
@@ -72,15 +134,13 @@ const EventNews = () => {
             })}
           </div>
         </div>
-        {events.map((ev) => (
-          <div key={ev.id} className="event-container">
-            <div className="event-date">
-              <span>{ev.date?.split(" ")[0]}</span>
-              <span>{ev.date?.split(" ")[1]}</span>
-            </div>
-            <div className="event-text">{ev.event}</div>
-          </div>
-        ))}
+        <div className="event-list-container">
+          <ul className="event-list" ref={eventListRef}>
+            {eventList}
+          </ul>
+        </div>
+
+        {renderedBtns}
       </div>
     </section>
   );

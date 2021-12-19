@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "./Announcements.css";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import Cookies from "universal-cookie";
+import { useRef } from "react";
 const cookies = new Cookies();
 
 const Annoucements = () => {
   const { t } = useTranslation();
-  const [value, setValue] = useState(0);
-
   const tabs = [
     {
       id: "announcementsTabs1",
@@ -27,7 +27,7 @@ const Annoucements = () => {
           announcement:
             cookies.get("i18next") === "tr"
               ? "2021 Sağlık Lisans Tamamlama ile Üniversitemize Yerleşen Öğrencilerin Kayıt İşlemleri"
-              : "Registration Procedures for Students who have settled in our University with 2021 Health Bachelor Completion",
+              : "Registration Procedures for Students who have Placed in our University with 2021 Health Bachelor Completion",
         },
         {
           id: "announcementCurrent3",
@@ -35,7 +35,7 @@ const Annoucements = () => {
           announcement:
             cookies.get("i18next") === "tr"
               ? "2021 DGS ile Üniversitemize Yerleşen Öğrencilerin Kayıt İşlemleri"
-              : "Registration Procedures for Students who have settled in our University with 2021 Health Bachelor Completion",
+              : "Registration Procedures for Students Who Have Been Placed in our University with 2021 DGS",
         },
         {
           id: "announcementCurrent4",
@@ -139,7 +139,69 @@ const Annoucements = () => {
     },
   ];
 
+  const [value, setValue] = useState(0);
+  const [click, setClick] = useState(0);
+  const ancListRef = useRef();
+
   const { announcements } = tabs[value];
+
+  const nextAnc = () => {
+    const topValue = `${click * -60}px`;
+    ancListRef.current.style.top = topValue;
+  };
+  const prevAnc = () => {
+    const topValue = `${click * 60}px`;
+    ancListRef.current.style.top = topValue;
+  };
+
+  const incClick = () => {
+    if (click > announcements.length - 1) setClick(0);
+    else {
+      nextAnc();
+    }
+  };
+
+  const decClick = () => {
+    if (click < 0) setClick(0);
+    else {
+      prevAnc();
+    }
+  };
+
+  useEffect(() => {
+    decClick();
+    incClick();
+  }, [click]);
+
+  const isShowBtns = tabs[value].announcements.length > 5;
+  const renderedBtns = isShowBtns && (
+    <div className="announcement-btn-container">
+      <button
+        className="announcement-btn announcement-next-btn"
+        onClick={() => setClick(click + 1)}
+      >
+        <FaChevronDown />
+        {t("home_announcements_nextBtn")}
+      </button>
+      <button
+        className="announcement-btn announcement-prev-btn"
+        onClick={() => setClick(click - 1)}
+      >
+        <FaChevronUp />
+        {t("home_announcements_prevBtn")}
+      </button>
+    </div>
+  );
+
+  const ancList = announcements.map((anc) => (
+    <li key={anc.id} className="announcement-item">
+      <div className="announcement-date">
+        <span>{anc.date.split(" ")[0]}</span>
+        <span>{anc.date.split(" ")[1]}</span>
+      </div>
+      <div className="announcement-text">{anc.announcement}</div>
+    </li>
+  ));
 
   return (
     <section className="announcements">
@@ -156,6 +218,7 @@ const Annoucements = () => {
                   }`}
                   onClick={() => {
                     setValue(index);
+                    setClick(0);
                   }}
                 >
                   {tab.title}
@@ -165,18 +228,11 @@ const Annoucements = () => {
           </div>
         </div>
         <div className="announcement-list-container">
-          <ul className="announcement-list">
-            {announcements.map((anc) => (
-              <li key={anc.id} className="announcement-item">
-                <div className="announcement-date">
-                  <span>{anc.date.split(" ")[0]}</span>
-                  <span>{anc.date.split(" ")[1]}</span>
-                </div>
-                <div className="announcement-text">{anc.announcement}</div>
-              </li>
-            ))}
+          <ul className="announcement-list" ref={ancListRef}>
+            {ancList}
           </ul>
         </div>
+        {renderedBtns}
       </div>
     </section>
   );
