@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ExternalLink } from "react-external-link";
@@ -9,6 +9,7 @@ import {
   FaInstagram,
   FaGlobe,
   FaSearch,
+  FaBars,
 } from "react-icons/fa";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -40,6 +41,8 @@ const languages = [
 ];
 
 const Home = () => {
+  const [isNavbarShowed, setIsNavbarShowed] = useState(false);
+
   const { t } = useTranslation();
   const menu = [
     {
@@ -735,6 +738,7 @@ const Home = () => {
   function changeLanguage(code) {
     i18next.changeLanguage(code);
   }
+
   return (
     <>
       <header className="header">
@@ -825,8 +829,14 @@ const Home = () => {
               />
               <FaSearch className="header-searchIcon" />
             </form>
+            <button
+              className="header-hamburgerMenu"
+              onClick={() => setIsNavbarShowed(!isNavbarShowed)}
+            >
+              <FaBars />
+            </button>
           </div>
-          <Navbar menu={menu}></Navbar>
+          <Navbar menu={menu} isNavbarShowed={isNavbarShowed}></Navbar>
         </div>
       </header>
       <main>

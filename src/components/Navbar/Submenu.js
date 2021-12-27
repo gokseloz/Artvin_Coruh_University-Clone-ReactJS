@@ -15,6 +15,7 @@ const Submenu = ({ id, title, subMenu, link }) => {
           ) : (
             <FaCaretRight className="nav-caret" />
           )}
+          <div className="mobile-nav-caret-right"></div>
 
           <ul className="dropdown2">
             {subMenu.map((subM) => {

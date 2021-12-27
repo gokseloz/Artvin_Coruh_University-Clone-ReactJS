@@ -8,6 +8,11 @@
   margin: 0 auto;
   padding: 0 0.5rem;
 }
+@media (max-width: 760px) {
+  .header-container {
+    padding: 0 1rem;
+  }
+}
 
 /* Label with yellowish background */
 .header-applicantStudent {
@@ -26,6 +31,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .header-applicantStudent {
+    display: none;
+  }
 }
 
 .header-applicantStudent span {
@@ -109,6 +120,32 @@
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 1000px) {
+  .header-main {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 760px) {
+  .header-main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.625rem;
+  }
+}
+
+.header-hamburgerMenu {
+  color: #fff;
+  font-size: 1.5rem;
+  display: none;
+}
+@media (max-width: 760px) {
+  .header-hamburgerMenu {
+    display: block;
+  }
+}
 
 .header-logoName {
   display: flex;
@@ -117,6 +154,11 @@
 
 .header-logoName figure {
   margin: 0;
+}
+@media (max-width: 760px) {
+  .header-logoName figure {
+    display: none;
+  }
 }
 
 .header-logo {
@@ -138,6 +180,17 @@
   font-style: italic;
   color: var(--clr-text-lightMustard);
 }
+@media (max-width: 760px) {
+  .header-headline {
+    margin-left: 0;
+  }
+  .header-headline h1 {
+    font-size: calc(0.7rem + 1.5vw);
+  }
+  .header-headline p {
+    display: none;
+  }
+}
 
 .header-searchForm {
   position: relative;
@@ -148,6 +201,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  .header-searchForm {
+    align-self: unset;
+    width: clamp(13rem, 60%, 80%);
+  }
+}
+@media (max-width: 760px) {
+  .header-searchForm {
+    display: none;
+  }
 }
 
 .header-searchBox {
@@ -160,6 +224,7 @@
   font-size: 0.875rem;
   font-family: Helvetica, Arial, sans-serif;
   transition: box-shadow var(--speed) ease-in-out;
+  padding-right: 3em;
 }
 
 .header-searchBox:focus {

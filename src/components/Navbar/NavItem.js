@@ -1,17 +1,39 @@
-import React from "react";
-import { FaCaretDown } from "react-icons/fa";
+import React, { useEffect, useRef, useState } from "react";
+import { FaCaretDown, FaPlus, FaMinus } from "react-icons/fa";
 import Submenu from "./Submenu";
 
 const NavItem = ({ id, title, subMenu }) => {
+  const [showSubmenu, setShowSubmenu] = useState(false);
+  const dropdown1ContainerRef = useRef();
+  const dropdown1Ref = useRef();
+
+  useEffect(() => {
+    const linksHeightDD1 = dropdown1Ref.current?.getBoundingClientRect().height;
+    if (showSubmenu) {
+      dropdown1ContainerRef.current.style.height = `${linksHeightDD1}px`;
+    } else {
+      dropdown1ContainerRef.current.style.height = `0px`;
+    }
+  }, [showSubmenu]);
+
   return (
     <li className="nav-item" key={id}>
       {title}
-      <FaCaretDown className="nav-caret" />
-      <ul className="dropdown1">
-        {subMenu.map((subM) => {
-          return <Submenu key={subM.id} {...subM} />;
-        })}
-      </ul>
+      <FaCaretDown className="nav-caret caret-down" />
+      <button className="showSubMenuBtn">
+        {showSubmenu ? (
+          <FaMinus onClick={() => setShowSubmenu(!showSubmenu)} />
+        ) : (
+          <FaPlus onClick={() => setShowSubmenu(!showSubmenu)} />
+        )}
+      </button>
+      <div className="dropdown1-container" ref={dropdown1ContainerRef}>
+        <ul className="dropdown1" ref={dropdown1Ref}>
+          {subMenu.map((subM) => {
+            return <Submenu key={subM.id} {...subM} />;
+          })}
+        </ul>
+      </div>
     </li>
   );
 };
