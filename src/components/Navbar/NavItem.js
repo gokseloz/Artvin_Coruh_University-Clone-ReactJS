@@ -15,7 +15,7 @@ const NavItem = ({ id, title, subMenu }) => {
   }, [showSubmenu]);
 
   return (
-    <li className="nav-item" key={id}>
+    <li className="nav-item" key={id} tabIndex="0">
       {title}
       <FaCaretDown className="nav-caret caret-down" />
       <button

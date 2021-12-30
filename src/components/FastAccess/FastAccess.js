@@ -53,11 +53,13 @@ const Fastaccess = () => {
     <section className="fastAccesses">
       <div className="fastAccesses-container">
         <div className="fastAccesses-heading">
-          <h3 className="fastAccesses-header">{t("home_fastAccess")}</h3>
+          <h3 className="fastAccesses-header" tabIndex="0">
+            {t("home_fastAccess")}
+          </h3>
         </div>
         <div className="fastAccess-container">
           {fastAccessMenu.map((item) => (
-            <div className="fastAccess-item" key={item.id}>
+            <div className="fastAccess-item" key={item.id} tabIndex="0">
               <div className="fastAccess-text">
                 <FaCaretRight style={{ color: "e7b040" }} />
                 {item.text}

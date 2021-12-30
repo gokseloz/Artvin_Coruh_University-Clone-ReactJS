@@ -752,6 +752,7 @@ const Home = () => {
               <ExternalLink
                 href="https://www.facebook.com/ArtvinCoruhUnv"
                 className="header-socialMediaLink"
+                aria-label="go to our facebook page"
               >
                 <FaFacebookSquare className="header-socialMediaIcon" />
               </ExternalLink>
@@ -759,6 +760,7 @@ const Home = () => {
               <ExternalLink
                 href="https://twitter.com/ArtvinCoruhUnv"
                 className="header-socialMediaLink"
+                aria-label="go to our twitter page"
               >
                 <FaTwitterSquare className="header-socialMediaIcon" />
               </ExternalLink>
@@ -766,6 +768,7 @@ const Home = () => {
               <ExternalLink
                 href="https://www.youtube.com/user/ArtvinCoruhUnv"
                 className="header-socialMediaLink"
+                aria-label="go to our youtube page"
               >
                 <FaYoutubeSquare className="header-socialMediaIcon" />
               </ExternalLink>
@@ -773,6 +776,7 @@ const Home = () => {
               <ExternalLink
                 href="https://www.instagram.com/artvincoruhunv/"
                 className="header-socialMediaLink"
+                aria-label="go to our instagram page"
               >
                 <FaInstagram className="header-socialMediaIcon" />
               </ExternalLink>
@@ -783,6 +787,7 @@ const Home = () => {
                 id="dropdown-basic-button"
                 title={<FaGlobe />}
                 className="languageSelector-btn"
+                menuRole="languageSelector"
               >
                 {languages.map((lang) => {
                   const { id, code, name, country_code } = lang;
@@ -822,10 +827,14 @@ const Home = () => {
               method="GET"
               className="header-searchForm"
             >
+              <label htmlFor="searchbox" className="header-searchform-label">
+                search box
+              </label>
               <input
                 className="header-searchBox"
                 type="text"
                 placeholder={t("header_searchPlaceHolder")}
+                id="searchbox"
               />
               <FaSearch className="header-searchIcon" />
             </form>

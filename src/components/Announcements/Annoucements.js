@@ -12,6 +12,7 @@ const Annoucements = () => {
     {
       id: "announcementsTabs1",
       title: t("home_announcements_current"),
+      ariaLabel: "current announcements",
       announcements: [
         {
           id: "announcementCurrent1",
@@ -82,6 +83,7 @@ const Annoucements = () => {
     {
       id: "announcementsTabs2",
       title: t("home_announcements_administ"),
+      ariaLabel: "administrative announcements",
       announcements: [
         {
           id: "announcementadminist1",
@@ -110,6 +112,7 @@ const Annoucements = () => {
     {
       id: "announcementsTabs3",
       title: t("home_announcements_student"),
+      ariaLabel: "student announcements",
       announcements: [
         {
           id: "announcementStudent1",
@@ -194,7 +197,7 @@ const Annoucements = () => {
   );
 
   const ancList = announcements.map((anc) => (
-    <li key={anc.id} className="announcement-item">
+    <li key={anc.id} className="announcement-item" tabIndex="0">
       <div className="announcement-date">
         <span>{anc.date.split(" ")[0]}</span>
         <span>{anc.date.split(" ")[1]}</span>
@@ -207,7 +210,9 @@ const Annoucements = () => {
     <section className="announcements">
       <div className="announcements-container">
         <div className="announcements-heading">
-          <h3 className="announcements-header">{t("home_announcements")}</h3>
+          <h3 className="announcements-header" tabIndex="0">
+            {t("home_announcements")}
+          </h3>
           <div className="announcements-tabs">
             {tabs.map((tab, index) => {
               return (
@@ -220,6 +225,8 @@ const Annoucements = () => {
                     setValue(index);
                     setClick(0);
                   }}
+                  aria-label={tab.ariaLabel}
+                  aria-click
                 >
                   {tab.title}
                 </button>

@@ -35,6 +35,7 @@
   margin-left: 0.3rem;
 }
 
+.nav-item:focus-within .dropdown1,
 .nav-item:hover .dropdown1 {
   visibility: visible;
   opacity: 1;
@@ -78,7 +79,8 @@
   color: var(--clr-text-hover-veryLightGray);
 }
 
-.dropdownItem:hover .dropdown2 {
+.dropdownItem:hover .dropdown2,
+.dropdownItem:focus-within .dropdown2 {
   visibility: visible;
   opacity: 1;
 }

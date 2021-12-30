@@ -105,7 +105,7 @@ const EventNews = () => {
   );
 
   const eventList = events.map((ev) => (
-    <li key={ev.id} className="event-container">
+    <li key={ev.id} className="event-container" tabIndex="0">
       <div className="event-date">
         <span>{ev.date?.split(" ")[0]}</span>
         <span>{ev.date?.split(" ")[1]}</span>

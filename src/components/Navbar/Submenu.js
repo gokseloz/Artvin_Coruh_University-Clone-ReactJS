@@ -25,6 +25,7 @@ const Submenu = ({ id, title, subMenu, link }) => {
           <span
             className="dropdown-link"
             onClick={() => setShowSubmenu2(!showSubmenu2)}
+            tabIndex="0"
           >
             <div className="dropdownItem-PlusMinus-mobile">
               {showSubmenu2 ? <FaMinus /> : <FaPlus />}
@@ -48,7 +49,7 @@ const Submenu = ({ id, title, subMenu, link }) => {
       )}
       {link && (
         <li className="dropdownItem" key={id}>
-          <a href="/" className="dropdown-link">
+          <a href="/" className="dropdown-link" tabIndex="0">
             {title}
           </a>
         </li>

@@ -115,10 +115,10 @@ const Footer = () => {
           </article>
 
           <article className="footer-contact">
-            <h6 className="footer-contact-header">
+            <h6 className="footer-contact-header" tabIndex="0">
               {t("footer_contact_header")}
             </h6>
-            <address>
+            <address tabIndex="0">
               <div className="footer-contact-address">
                 <ImLocation className="icon icon-location" />
                 <p>{t("footer_contact_desc")}</p>
@@ -140,6 +140,7 @@ const Footer = () => {
             <h6
               className="footer-links-header"
               onClick={() => setShowlinks(!showlinks)}
+              tabIndex="0"
             >
               {t("footer_links_header")}
             </h6>
