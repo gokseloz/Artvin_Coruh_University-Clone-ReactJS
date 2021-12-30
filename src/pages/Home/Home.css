@@ -254,3 +254,8 @@
   display: flex;
   gap: 1rem;
 }
+@media (max-width: 1200px) {
+  .newsAndQuickLinks-container {
+    flex-direction: column;
+  }
+}

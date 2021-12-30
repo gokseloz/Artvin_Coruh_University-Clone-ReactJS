@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
 import logoAndUni from "../../assets/images/footer/logoAndUni.png";
 import "./Footer.css";
 import { useTranslation } from "react-i18next";
@@ -9,6 +9,99 @@ import { FaPhone, FaFax, FaChevronRight } from "react-icons/fa";
 const Footer = () => {
   const { t } = useTranslation();
   const copyRightYear = new Date().getFullYear();
+  const [showlinks, setShowlinks] = useState(false);
+
+  const footerLinksContainerMobile = (
+    <div className="footer-links-container-mobile">
+      <ul className="footer-links-list">
+        <li className="footer-links-listItem">
+          <a href="#">
+            <FaChevronRight className="footer-rightArrow" />
+            {t("footer_links_virtualTour")}
+          </a>
+        </li>
+        <li className="footer-links-listItem">
+          <a href="#">
+            {" "}
+            <FaChevronRight className="footer-rightArrow" />
+            {t("footer_links_promotion")}
+          </a>
+        </li>
+        <li className="footer-links-listItem">
+          <a href="#">
+            {" "}
+            <FaChevronRight className="footer-rightArrow" />
+            {t("footer_links_bulletin")}
+          </a>
+        </li>
+        <li className="footer-links-listItem">
+          <a href="#">
+            {" "}
+            <FaChevronRight className="footer-rightArrow" />
+            {t("footer_links_getInfo")}
+          </a>
+        </li>
+
+        <li className="footer-links-listItem">
+          <a href="#">
+            {" "}
+            <FaChevronRight className="footer-rightArrow" />
+            {t("footer_links_cimer")}
+          </a>
+        </li>
+        <li className="footer-links-listItem">
+          <a href="#">
+            {" "}
+            <FaChevronRight className="footer-rightArrow" />
+            {t("footer_links_wireless")}
+          </a>
+        </li>
+        <li className="footer-links-listItem">
+          <a href="#">
+            {" "}
+            <FaChevronRight className="footer-rightArrow" />
+            {t("footer_links_offCampusAccess")}
+          </a>
+        </li>
+        <li className="footer-links-listItem">
+          <a href="#">
+            {" "}
+            <FaChevronRight className="footer-rightArrow" />
+            {t("footer_links_planeterium")}
+          </a>
+        </li>
+
+        <li className="footer-links-listItem">
+          <a href="#">
+            {" "}
+            <FaChevronRight className="footer-rightArrow" />
+            {t("footer_links_alumniInfo")}
+          </a>
+        </li>
+        <li className="footer-links-listItem">
+          <a href="#">
+            {" "}
+            <FaChevronRight className="footer-rightArrow" />
+            {t("footer_links_personals")}
+          </a>
+        </li>
+        <li className="footer-links-listItem">
+          <a href="#">
+            {" "}
+            <FaChevronRight className="footer-rightArrow" />
+            {t("footer_links_acuByNumbers")}
+          </a>
+        </li>
+        <li className="footer-links-listItem">
+          <a href="#">
+            {" "}
+            <FaChevronRight className="footer-rightArrow" />
+            {t("footer_links_contact")}
+          </a>
+        </li>
+      </ul>
+    </div>
+  );
 
   return (
     <footer className="footer">
@@ -22,10 +115,10 @@ const Footer = () => {
           </article>
 
           <article className="footer-contact">
+            <h6 className="footer-contact-header">
+              {t("footer_contact_header")}
+            </h6>
             <address>
-              <h6 className="footer-contact-header">
-                {t("footer_contact_header")}
-              </h6>
               <div className="footer-contact-address">
                 <ImLocation className="icon icon-location" />
                 <p>{t("footer_contact_desc")}</p>
@@ -44,7 +137,12 @@ const Footer = () => {
           </article>
 
           <article className="footer-links">
-            <h6 className="footer-links-header">{t("footer_links_header")}</h6>
+            <h6
+              className="footer-links-header"
+              onClick={() => setShowlinks(!showlinks)}
+            >
+              {t("footer_links_header")}
+            </h6>
             <div className="footer-links-container">
               <ul className="footer-links-list">
                 <li className="footer-links-listItem">
@@ -118,6 +216,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+            {showlinks && footerLinksContainerMobile}
           </article>
         </section>
       </div>

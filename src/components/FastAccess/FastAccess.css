@@ -58,3 +58,9 @@
   color: #ecfcfa;
   padding: 4px 12px;
 }
+
+@media (max-width: 1200px) {
+  .fastAccesses {
+    width: 100%;
+  }
+}

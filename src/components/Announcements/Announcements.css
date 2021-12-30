@@ -135,3 +135,9 @@ ul {
 .active-btn {
   color: var(--clr-text-darkMustard);
 }
+
+@media (max-width: 1200px) {
+  .announcements {
+    width: 100%;
+  }
+}
