@@ -1,13 +1,22 @@
-import React from "react";
-import { FaCaretRight, FaCaretLeft } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaCaretRight, FaCaretLeft, FaPlus, FaMinus } from "react-icons/fa";
 import Submenu2 from "./Submenu2";
 
 const Submenu = ({ id, title, subMenu, link }) => {
+  const [showSubmenu, setShowSubmenu] = useState(false);
+
   return (
     <>
+      {/* <FaMinus /> : <FaPlus />} */}
       {subMenu && (
-        <li className="dropdownItem" key={id}>
+        <li
+          className="dropdownItem"
+          key={id}
+          onMouseOver={() => setShowSubmenu(true)}
+          onMouseLeave={() => setShowSubmenu(false)}
+        >
           <a href="/" className="dropdown-link">
+            {showSubmenu ? <FaMinus /> : <FaPlus />}
             {title}
           </a>
           {id.startsWith("4") || id.startsWith("5") ? (

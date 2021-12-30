@@ -1,26 +1,47 @@
 import React, { useRef, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import NavItem from "./NavItem";
 import "./Navbar.css";
+import { FaSearch } from "react-icons/fa";
 
 const Navbar = ({ menu, isNavbarShowed }) => {
-  const headerNavbarContainer = useRef();
+  const { t } = useTranslation();
 
-  const mediaQuery = window.matchMedia(`(min-width: 760px`);
+  const headerNavbarContainerMobile = useRef();
 
   useEffect(() => {
     if (isNavbarShowed) {
-      headerNavbarContainer.current.style.height = `auto`;
+      headerNavbarContainerMobile.current.style.height = `auto`;
     } else {
-      if (mediaQuery.matches) {
-        headerNavbarContainer.current.style.height = `auto`;
-      } else {
-        headerNavbarContainer.current.style.height = `0px`;
-      }
+      headerNavbarContainerMobile.current.style.height = `0px`;
     }
   }, [isNavbarShowed]);
 
-  return (
-    <div className="header-navbar-container" ref={headerNavbarContainer}>
+  const mobileNavbar = (
+    <div
+      className="header-navbar-container-mobile"
+      ref={headerNavbarContainerMobile}
+    >
+      <form action="#" method="GET" className="header-searchForm-mobile">
+        <input
+          className="header-searchBox"
+          type="text"
+          placeholder={t("header_searchPlaceHolder")}
+        />
+        <FaSearch className="header-searchIcon" />
+      </form>
+      <nav className="header-navbar-mobile">
+        <ul className="navbar-nav">
+          {menu.map((item) => {
+            return <NavItem key={item.id} {...item} />;
+          })}
+        </ul>
+      </nav>
+    </div>
+  );
+
+  const desktopNavbar = (
+    <div className="header-navbar-container">
       <nav className="header-navbar">
         <ul className="navbar-nav">
           {menu.map((item) => {
@@ -29,6 +50,13 @@ const Navbar = ({ menu, isNavbarShowed }) => {
         </ul>
       </nav>
     </div>
+  );
+
+  return (
+    <>
+      {mobileNavbar}
+      {desktopNavbar}
+    </>
   );
 };
 
