@@ -146,11 +146,11 @@ const Annoucements = () => {
   const { announcements } = tabs[value];
 
   const nextAnc = () => {
-    const topValue = `${click * -60}px`;
+    const topValue = `${click * -58}px`;
     ancListRef.current.style.top = topValue;
   };
   const prevAnc = () => {
-    const topValue = `${click * 60}px`;
+    const topValue = `${click * 58}px`;
     ancListRef.current.style.top = topValue;
   };
 
