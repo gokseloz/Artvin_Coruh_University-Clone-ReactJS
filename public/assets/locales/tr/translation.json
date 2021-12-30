@@ -148,7 +148,7 @@
   "header_nav_research_centers_medicinalAromaticPlants": "Tıbbi-Aromatik Bitkiler Uygulama ve Araştırma Merkezi",
 
   "header_nav_eacu": "E-Açü",
-  "header_nav_eacu_personnel": "Personnel",
+  "header_nav_eacu_personnel": "Personel",
   "header_nav_eacu_personnel_ebys": "EBYS",
   "header_nav_eacu_personnel_academicInfo": "Akademik Bilgi Sistemi",
   "header_nav_eacu_personnel_legislations": "Mevzuat",
@@ -156,12 +156,12 @@
   "header_nav_eacu_personnel_personnelAutomation": "Personel Otomasyonu",
   "header_nav_eacu_personnel_srpAutomation": "BAP Otomasyonu",
 
-  "header_nav_eacu_student": "Student",
+  "header_nav_eacu_student": "Öğrenci",
   "header_nav_eacu_student_studentInfo": "Öğrenci Bilgi Sistemi",
   "header_nav_eacu_student_alumniInfo": "Mezun Bilgi Sistemi",
   "header_nav_eacu_student_distanceEducation": "Uzaktan Eğitim",
 
-  "header_nav_eacu_general": "General",
+  "header_nav_eacu_general": "Genel",
   "header_nav_eacu_general_legislation": "Mevzuat",
   "header_nav_eacu_general_eMail": "E-posta Islemleri",
   "header_nav_eacu_general_acts": "AKTS ve TYYC Katalogu",
@@ -172,7 +172,7 @@
   "header_nav_eacu_general_wifi": "Kablosuz Internet",
   "header_nav_eacu_general_programAssessment": "ÜYBS Program Degerlendirme Sistemi",
 
-  "header_nav_eacu_acuMobile": "ACU Mobile",
+  "header_nav_eacu_acuMobile": "AÇÜ Mobil",
 
   "home_slider_savsat": "Şavşat",
   "home_slider_borcka_darkLake": "Borçka Karagöl",

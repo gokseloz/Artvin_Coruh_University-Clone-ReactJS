@@ -29,6 +29,7 @@
   padding: 0.75em;
   border-radius: 1em;
 }
+
 .carousel.carousel-slider .control-arrow {
   position: absolute;
   top: 50%;
@@ -49,4 +50,21 @@
 
 .carousel .control-next.control-arrow {
   right: 2%;
+}
+
+@media (max-width: 760px) {
+  .carousel .slide div {
+    height: 100%;
+  }
+  .carousel .slide img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .slider {
+    aspect-ratio: 2/1;
+  }
+
+  .carousel .slide .legend {
+    font-size: 0.7rem;
+  }
 }

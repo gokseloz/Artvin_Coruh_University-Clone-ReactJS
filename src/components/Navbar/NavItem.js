@@ -5,19 +5,12 @@ import Submenu from "./Submenu";
 const NavItem = ({ id, title, subMenu }) => {
   const [showSubmenu, setShowSubmenu] = useState(false);
   const dropdown1ContainerRef = useRef();
-  const dropdown1Ref = useRef();
-
-  const mediaQuery = window.matchMedia(`(min-width: 760px`);
 
   useEffect(() => {
-    const linksHeightDD1 = dropdown1Ref.current?.getBoundingClientRect().height;
     if (showSubmenu) {
-      dropdown1ContainerRef.current.style.height = `${linksHeightDD1}px`;
+      dropdown1ContainerRef.current.style.maxHeight = `999px`;
     } else {
-      if (mediaQuery.matches) {
-        dropdown1ContainerRef.current.style.height = `auto`;
-      }
-      dropdown1ContainerRef.current.style.height = `0px`;
+      dropdown1ContainerRef.current.style.maxHeight = `0px`;
     }
   }, [showSubmenu]);
 
@@ -32,7 +25,7 @@ const NavItem = ({ id, title, subMenu }) => {
         {showSubmenu ? <FaMinus /> : <FaPlus />}
       </button>
       <div className="dropdown1-container" ref={dropdown1ContainerRef}>
-        <ul className="dropdown1" ref={dropdown1Ref}>
+        <ul className="dropdown1">
           {subMenu.map((subM) => {
             return <Submenu key={subM.id} {...subM} />;
           })}
